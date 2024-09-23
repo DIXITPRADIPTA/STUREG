@@ -78,10 +78,10 @@ WSGI_APPLICATION = 'course_registration.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'yourusername$your_database_name',  # Your database name on PythonAnywhere
-        'USER': 'yourusername',  # Your PythonAnywhere MySQL username
-        'PASSWORD': 'your_password',  # Your MySQL password on PythonAnywhere
-        'HOST': 'yourusername.mysql.pythonanywhere-services.com',  # MySQL host on PythonAnywhere
+        'NAME': 'studentregistration$your_database_name',  # Your database name on PythonAnywhere
+        'USER': 'root',  # Your PythonAnywhere MySQL username
+        'PASSWORD': 'root',  # Your MySQL password on PythonAnywhere
+        'HOST': 'studentregistration.mysql.pythonanywhere-services.com',  # MySQL host on PythonAnywhere
         'PORT': '3306',  # MySQL port (standard)
     }
 }
