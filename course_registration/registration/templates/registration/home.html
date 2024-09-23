@@ -1,0 +1,52 @@
+<!-- home.html -->
+{% extends 'registration/base.html' %}
+
+{% block title %}
+    Home | Student Registration Website
+{% endblock %}
+
+{% block content %}
+    <!-- About and Contact cards -->
+    <div class="row">
+        <!-- About Our Organization Card -->
+        <div class="col-md-6">
+            <div class="card text-center shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">About Our Organization</h5>
+                    <p class="card-text">We are committed to excellence in education, focusing on innovation and skill development.</p>
+                    <button class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Learn more about us!">Learn More</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact With Us Card -->
+        <div class="col-md-6">
+            <div class="card text-center shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Contact With Us</h5>
+                    <p class="card-text">Email us at contact@organization.com or call +123-456-7890.</p>
+                    <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#contactModal">Get In Touch</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactModalLabel">Contact Us</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Feel free to reach us via email or phone for any queries or support.</p>
+                    <ul>
+                        <li>Email: contact@organization.com</li>
+                        <li>Phone: +123-456-7890</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
